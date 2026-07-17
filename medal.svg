@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE55C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A3728;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1410;stop-opacity:1" />
+    </linearGradient>
+    <filter id="goldShine">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/>
+      <feSpecularLighting surfaceScale="5" specularConstant="0.5" lighting-color="#fff" result="spec">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
+    </filter>
+  </defs>
+
+  <!-- Left Laurel Wreath -->
+  <g id="left-wreath">
+    <ellipse cx="50" cy="100" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(-50 50 100)" filter="url(#goldShine)"/>
+    <ellipse cx="40" cy="135" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(-35 40 135)" filter="url(#goldShine)"/>
+    <ellipse cx="45" cy="175" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(-15 45 175)" filter="url(#goldShine)"/>
+    <ellipse cx="60" cy="210" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(5 60 210)" filter="url(#goldShine)"/>
+    <ellipse cx="85" cy="240" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(25 85 240)" filter="url(#goldShine)"/>
+    <ellipse cx="115" cy="265" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(45 115 265)" filter="url(#goldShine)"/>
+  </g>
+
+  <!-- Right Laurel Wreath -->
+  <g id="right-wreath">
+    <ellipse cx="350" cy="100" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(50 350 100)" filter="url(#goldShine)"/>
+    <ellipse cx="360" cy="135" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(35 360 135)" filter="url(#goldShine)"/>
+    <ellipse cx="355" cy="175" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(15 355 175)" filter="url(#goldShine)"/>
+    <ellipse cx="340" cy="210" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(-5 340 210)" filter="url(#goldShine)"/>
+    <ellipse cx="315" cy="240" rx="14" ry="24" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="1.5" transform="rotate(-25 315 240)" filter="url(#goldShine)"/>
+    <ellipse cx="285" cy="265" rx="14" ry="24" fill="#FFD700" stroke="#2d2416" stroke-width="1.5" transform="rotate(-45 285 265)" filter="url(#goldShine)"/>
+  </g>
+
+  <!-- Outer Medal Circle -->
+  <circle cx="200" cy="180" r="145" fill="url(#goldGradient)" stroke="#2d2416" stroke-width="6" filter="url(#goldShine)"/>
+  
+  <!-- Inner Medal Circle -->
+  <circle cx="200" cy="180" r="135" fill="#fff8dc" stroke="#DAA520" stroke-width="3"/>
+  
+  <!-- Decorative border -->
+  <circle cx="200" cy="180" r="125" fill="none" stroke="#2d2416" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Medal Face Circle -->
+  <circle cx="200" cy="180" r="110" fill="#f0e68c" stroke="#DAA520" stroke-width="2"/>
+  
+  <!-- Top decorative text -->
+  <text x="200" y="105" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2d2416" letter-spacing="2">ARTHUR GUINNESS SON &amp; CO.</text>
+  
+  <!-- Top right text -->
+  <text x="290" y="105" font-family="Georgia, serif" font-size="14" font-weight="bold" text-anchor="end" fill="#2d2416" letter-spacing="1">(DUBLIN) LTD. BREWERS</text>
+  
+  <!-- Title -->
+  <text x="200" y="155" font-family="Georgia, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#2d2416" letter-spacing="2">IACG WGC</text>
+  
+  <!-- Harp symbol -->
+  <text x="200" y="140" font-family="Georgia, serif" font-size="20" text-anchor="middle" fill="#2d2416">🍀</text>
+  
+  <!-- Champion name -->
+  <text x="200" y="195" font-family="Georgia, serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#2d2416" letter-spacing="1">P. Bredin</text>
+  
+  <!-- Date -->
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2d2416">10th July 2026</text>
+  
+  <!-- Bottom left text -->
+  <text x="110" y="250" font-family="Georgia, serif" font-size="12" text-anchor="start" fill="#2d2416" letter-spacing="1">HE GOLFED HIS LITTLE ARSE OFF</text>
+  
+  <!-- Bottom right text -->
+  <text x="290" y="250" font-family="Georgia, serif" font-size="12" text-anchor="end" fill="#2d2416" letter-spacing="1">REIGNING CHAMPION</text>
+</svg>
