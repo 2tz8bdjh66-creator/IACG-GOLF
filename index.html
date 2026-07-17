@@ -10,6 +10,8 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -22,7 +24,7 @@ body{
     margin:0;
     padding: 0;
     background: linear-gradient(135deg, #1a1410 0%, #2d2416 50%, #1a1410 100%);
-    color:#222;
+    color:#ffffff;
     font-family: Arial, Helvetica, sans-serif;
     line-height:1.7;
     min-height: 100vh;
@@ -32,10 +34,10 @@ body{
     width:90%;
     max-width:900px;
     margin:20px auto;
-    background:#f7f1df;
-    border:8px double #8b6b1d;
+    background: transparent;
+    border: none;
     padding:30px 20px;
-    box-shadow:0 0 25px rgba(0,0,0,.25);
+    box-shadow: none;
 }
 
 header{
@@ -51,29 +53,31 @@ header img{
 }
 
 h1{
-    color:#17452c;
-    font-size:clamp(28px, 8vw, 42px);
-    letter-spacing:2px;
+    color:#DAA520;
+    font-size:clamp(28px, 8vw, 52px);
+    letter-spacing:3px;
     margin:5px 0 8px 0;
     text-transform:uppercase;
     word-break: break-word;
-    font-weight: bold;
+    font-weight: 900;
+    font-family: 'Playfair Display', 'Georgia', serif;
     text-shadow: 
-        2px 2px 0px rgba(0,0,0,0.3),
-        4px 4px 0px rgba(0,0,0,0.2),
-        6px 6px 8px rgba(0,0,0,0.4),
-        -1px -1px 0px rgba(255,255,255,0.5);
+        2px 2px 0px rgba(0,0,0,0.5),
+        4px 4px 0px rgba(0,0,0,0.4),
+        6px 6px 12px rgba(0,0,0,0.6),
+        -1px -1px 0px rgba(255,255,255,0.2);
 }
 
 .subtitle{
     font-style:italic;
-    color:#666;
+    color:#999;
     margin-bottom:30px;
     font-size:16px;
 }
 
 .intro {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .intro p{
@@ -81,6 +85,7 @@ h1{
     font-size:clamp(16px, 4vw, 20px);
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 .current-holder{
@@ -88,44 +93,42 @@ h1{
     padding:40px 20px;
     text-align:center;
     position: relative;
-    background: linear-gradient(135deg, #fff8dc 0%, #f0e68c 50%, #ffd700 100%);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.laurel-wreath {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.laurel-wreath svg {
-    width: 300px;
-    height: 300px;
-    max-width: 90%;
+.medal-image {
+    width: 100%;
+    max-width: 400px;
     height: auto;
+    margin: 0 auto 30px;
+    display: block;
 }
 
 .current-holder h2{
     margin-top:0;
-    margin-bottom:15px;
-    color:#17452c;
+    margin-bottom:20px;
+    color:#DAA520;
     text-transform:uppercase;
-    font-size:clamp(18px, 5vw, 24px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:clamp(18px, 5vw, 32px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .current-holder .name{
-    font-size:clamp(28px, 7vw, 42px);
+    font-size:clamp(28px, 7vw, 48px);
     font-weight:bold;
     margin-bottom:15px;
-    color: #1a1410;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    color: #DAA520;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .current-holder .date{
     font-size:clamp(14px, 4vw, 18px);
-    color: #1a1410;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -135,28 +138,31 @@ section{
 }
 
 section h2{
-    color:#17452c;
-    border-bottom:3px solid #17452c;
+    color:#DAA520;
+    border-bottom:3px solid #DAA520;
     padding-bottom:8px;
     text-transform:uppercase;
-    font-size:clamp(18px, 5vw, 24px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:clamp(18px, 5vw, 28px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .match{
     margin:20px 0;
     padding-left:15px;
-    border-left:5px solid #17452c;
+    border-left:5px solid #DAA520;
 }
 
 .match-date{
     font-weight:bold;
     font-size:clamp(14px, 3.5vw, 16px);
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 .match-location{
-    color:#666;
+    color:#999;
     font-size:clamp(13px, 3vw, 15px);
     margin-top:5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -166,14 +172,15 @@ section h2{
     margin-top:8px;
     font-size:clamp(14px, 4vw, 20px);
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 footer{
     margin-top:50px;
     text-align:center;
     font-style:italic;
-    color:#666;
-    border-top:1px solid #aaa;
+    color:#999;
+    border-top:1px solid #444;
     padding-top:20px;
     font-size:clamp(12px, 3vw, 16px);
     font-family: Arial, Helvetica, sans-serif;
@@ -183,6 +190,7 @@ footer b {
     display: block;
     margin-bottom: 10px;
     font-size: clamp(14px, 3.5vw, 18px);
+    color: #DAA520;
 }
 
 /* Mobile optimization */
@@ -190,16 +198,14 @@ footer b {
     .wrapper {
         padding: 20px 15px;
         margin: 15px auto;
-        border-width: 6px;
     }
     
     h1 {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     
     .current-holder {
         padding: 20px 15px;
-        border-radius: 15px;
     }
     
     .match {
@@ -215,7 +221,6 @@ footer b {
 @media (max-width: 400px) {
     .wrapper {
         padding: 15px 12px;
-        border-width: 4px;
     }
     
     h1 {
@@ -270,48 +275,7 @@ Friends, family and colleagues are likely to think less of you should you ever m
 
 <h2>Current Champion</h2>
 
-<div class="laurel-wreath">
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Left laurel wreath -->
-  <g id="left-wreath">
-    <!-- Gold leaf 1 -->
-    <ellipse cx="60" cy="80" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(-45 60 80)" filter="url(#shine)"/>
-    <!-- Gold leaf 2 -->
-    <ellipse cx="45" cy="110" rx="12" ry="20" fill="#FFC700" stroke="#DAA520" stroke-width="1" transform="rotate(-25 45 110)" filter="url(#shine)"/>
-    <!-- Gold leaf 3 -->
-    <ellipse cx="50" cy="145" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(-5 50 145)" filter="url(#shine)"/>
-    <!-- Gold leaf 4 -->
-    <ellipse cx="65" cy="175" rx="12" ry="20" fill="#FFC700" stroke="#DAA520" stroke-width="1" transform="rotate(15 65 175)" filter="url(#shine)"/>
-    <!-- Gold leaf 5 -->
-    <ellipse cx="90" cy="200" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(35 90 200)" filter="url(#shine)"/>
-  </g>
-  
-  <!-- Right laurel wreath (mirrored) -->
-  <g id="right-wreath">
-    <!-- Gold leaf 1 -->
-    <ellipse cx="240" cy="80" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(45 240 80)" filter="url(#shine)"/>
-    <!-- Gold leaf 2 -->
-    <ellipse cx="255" cy="110" rx="12" ry="20" fill="#FFC700" stroke="#DAA520" stroke-width="1" transform="rotate(25 255 110)" filter="url(#shine)"/>
-    <!-- Gold leaf 3 -->
-    <ellipse cx="250" cy="145" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(5 250 145)" filter="url(#shine)"/>
-    <!-- Gold leaf 4 -->
-    <ellipse cx="235" cy="175" rx="12" ry="20" fill="#FFC700" stroke="#DAA520" stroke-width="1" transform="rotate(-15 235 175)" filter="url(#shine)"/>
-    <!-- Gold leaf 5 -->
-    <ellipse cx="210" cy="200" rx="12" ry="20" fill="#FFD700" stroke="#DAA520" stroke-width="1" transform="rotate(-35 210 200)" filter="url(#shine)"/>
-  </g>
-  
-  <!-- Center circle for name -->
-  <circle cx="150" cy="150" r="85" fill="#f0e68c" stroke="#DAA520" stroke-width="3"/>
-  <circle cx="150" cy="150" r="80" fill="#fff8dc" stroke="#FFD700" stroke-width="2"/>
-  
-  <!-- Shine effect definition -->
-  <defs>
-    <filter id="shine">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
-    </filter>
-  </defs>
-</svg>
-</div>
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 450'%3E%3Cdefs%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FFE55C;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23FFD700;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23DAA520;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='dark' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23333;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23000;stop-opacity:1' /%3E%3C/linearGradient%3E%3Cfilter id='shine'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='0.5'/%3E%3C/filter%3E%3C/defs%3E%3C!-- Left Laurel Wreath --%3E%3Cg id='left-wreath'%3E%3Cellipse cx='50' cy='100' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(-50 50 100)'/%3E%3Cellipse cx='40' cy='135' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(-35 40 135)'/%3E%3Cellipse cx='45' cy='175' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(-15 45 175)'/%3E%3Cellipse cx='60' cy='210' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(5 60 210)'/%3E%3Cellipse cx='85' cy='240' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(25 85 240)'/%3E%3Cellipse cx='115' cy='260' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(45 115 260)'/%3E%3C/g%3E%3C!-- Right Laurel Wreath --%3E%3Cg id='right-wreath'%3E%3Cellipse cx='350' cy='100' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(50 350 100)'/%3E%3Cellipse cx='360' cy='135' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(35 360 135)'/%3E%3Cellipse cx='355' cy='175' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(15 355 175)'/%3E%3Cellipse cx='340' cy='210' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(-5 340 210)'/%3E%3Cellipse cx='315' cy='240' rx='14' ry='24' fill='url(%23gold)' stroke='%23333' stroke-width='1' transform='rotate(-25 315 240)'/%3E%3Cellipse cx='285' cy='260' rx='14' ry='24' fill='%23FFD700' stroke='%23333' stroke-width='1' transform='rotate(-45 285 260)'/%3E%3C/g%3E%3C!-- Outer Circle --%3E%3Ccircle cx='200' cy='180' r='140' fill='url(%23gold)' stroke='url(%23dark)' stroke-width='5'/%3E%3C!-- Inner Circle --%3E%3Ccircle cx='200' cy='180' r='130' fill='%23FFE55C' stroke='%23DAA520' stroke-width='2'/%3E%3C!-- Border decoration --%3E%3Ccircle cx='200' cy='180' r='125' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='5,3'/%3E%3C!-- Center circle for champion --%3E%3Ccircle cx='200' cy='180' r='100' fill='%23f0e68c' stroke='%23DAA520' stroke-width='2'/%3E%3C!-- Top text --%3E%3Ctext x='200' y='100' font-family='Georgia, serif' font-size='18' font-weight='bold' text-anchor='middle' fill='%23333' letter-spacing='3'%3EIACG WGC%3C/text%3E%3C!-- Harp symbol --%3E%3Ctext x='200' y='130' font-family='Georgia, serif' font-size='24' text-anchor='middle' fill='%23333'%3E🏅%3C/text%3E%3C!-- Champion name placeholder --%3E%3Ctext x='200' y='190' font-family='Georgia, serif' font-size='28' font-weight='bold' text-anchor='middle' fill='%23333' letter-spacing='2'%3EP. BREDIN%3C/text%3E%3C!-- Date --%3E%3Ctext x='200' y='220' font-family='Arial, sans-serif' font-size='14' text-anchor='middle' fill='%23333'%3E10th July 2026%3C/text%3E%3C!-- Bottom text curved --%3E%3Ctext x='200' y='265' font-family='Arial, sans-serif' font-size='13' text-anchor='middle' fill='%23333' font-style='italic'%3EREIGNING CHAMPION%3C/text%3E%3C/svg%3E" alt="IACG WGC Medal" class="medal-image">
 
 <div class="name">
 P. BREDIN
